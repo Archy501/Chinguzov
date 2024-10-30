@@ -39,7 +39,9 @@ header:hover {
     padding: 10px;
     gap: 1.5em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: row; /* Додаємо, щоб зберегти елементи в рядок */
 }
+
 
 .nav-item {
     color: #fff;
