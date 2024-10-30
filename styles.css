@@ -1,3 +1,4 @@
+/* Основні стилі */
 * {
     margin: 0;
     padding: 0;
@@ -6,46 +7,54 @@
 }
 
 body {
-    background-color: #2345db;
+    background-color: #f0f0f0;
     transition: background-color 1s;
 }
 
 body:hover {
-    background-color: #d7e23e;
+    background-color: #e3e4dc;
 }
 
+/* Стили для header */
 header {
-    background-color: #2189cf;
-    color: #10eedb;
+    background-color: #2345db;
+    color: #fff;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.8em;
+    font-weight: bold;
     transition: background-color 0.5s;
 }
 
 header:hover {
-    background-color: #b0e914;
+    background-color: #3e77e8;
 }
 
+/* Стили для навігації */
 .navbar {
     display: flex;
-    justify-content: space-around;
-    background-color: #0ef192;
+    justify-content: center;
+    background-color: #2189cf;
     padding: 10px;
+    gap: 1.5em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.5s;
 }
+
 .nav-item {
     color: #fff;
-    padding: 10px 20px;
+    padding: 8px 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 1.1em;
+    border-radius: 5px;
 }
 
 .nav-item:hover {
-    background-color: #bff107;
+    background-color: #176fa8;
 }
 
+/* Стили для основного контенту */
 .content {
     display: flex;
     justify-content: space-around;
@@ -59,8 +68,19 @@ header:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 20px;
-    width: 30%;
+    width: calc(33% - 40px);
     transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.5;
 }
 
 .card:hover {
@@ -68,18 +88,23 @@ header:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Стили для footer */
 footer {
-    background-color: #e75b19;
+    background-color: #2d3436;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     width: 100%;
     bottom: 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.5s;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 0;
 }
 
 footer:hover {
-    background-color: #ec135b;
+    background-color: #353b3d;
 }
